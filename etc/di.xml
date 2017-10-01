@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Magento\Catalog\Block\Product\View" type="Btm\Fix10150\Block\Product\View" /> 
+    <type name="Magento\Catalog\Block\Product\View">
+        <plugin name="fix_10150" type="Btm\Fix10150\Plugin\Block\Product\View" sortOrder="1" disabled="false"/>
+    </type>
 </config>
